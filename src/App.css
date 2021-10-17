@@ -1,38 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;600;800&display=swap');
+
+/* https://cssgradient.io/ */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: rgb(1,1,16);
+  background: linear-gradient(180deg, rgba(1,1,10,1) 0%, rgba(19,19,33,1) 60%);
 }
 
-.App-link {
-  color: #61dafb;
+::selection {
+  background-color:#aef;
+  color: #339;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40px;
+  color: #fff;
+}
+
+label {
+  color: #ddd;
+  padding: 0 0 0px 5px;
+  font-size: .8rem;
+}
+
+textarea {
+  color: #fff;
+  line-height: 1.2rem;
+  margin: 3px 0 7px 0;
+  background: rgb(32,32,51);
+  background: linear-gradient(180deg, rgba(32,32,51,1) 0%, rgba(41,41,63,1) 100%);
+  padding: 10px 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,.4);
+  min-width: 300px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  box-shadow: 0 0 25px rgba(0,0,0,.4), 0 0 6px inset rgba(255,255,255,.26);
+  border: none;
+  outline: none;
+}
+
+textarea.password {
+  height: 20px;
+}
+
+textarea.encrypted, textarea.plaintext {
+  min-height: 100px;
 }
