@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;600;800&display=swap");
 
 /* https://cssgradient.io/ */
 
@@ -9,12 +9,16 @@
   align-items: center;
   min-height: 100vh;
   min-width: 100vw;
-  background: rgb(1,1,16);
-  background: linear-gradient(180deg, rgba(1,1,10,1) 0%, rgba(19,19,33,1) 60%);
+  background: rgb(1, 1, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 1, 10, 1) 0%,
+    rgba(19, 19, 33, 1) 60%
+  );
 }
 
 ::selection {
-  background-color:#aef;
+  background-color: #aef;
   color: #339;
 }
 
@@ -26,7 +30,7 @@ h1 {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   padding: 0 10px;
@@ -42,17 +46,21 @@ nav {
 label {
   color: #ddd;
   padding: 0 0 0px 5px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 textarea {
   color: #fff;
   line-height: 1.2rem;
   margin: 3px 0 7px 0;
-  background: rgb(32,32,51);
-  background: linear-gradient(180deg, rgba(32,32,51,1) 0%, rgba(41,41,63,1) 100%);
+  background: rgb(32, 32, 51);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 51, 1) 0%,
+    rgba(41, 41, 63, 1) 100%
+  );
   padding: 10px 16px;
-  box-shadow: 0 0 25px rgba(0,0,0,.4);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   min-width: 300px;
   border: none;
   border-radius: 10px;
@@ -60,7 +68,8 @@ textarea {
 }
 
 textarea:focus {
-  box-shadow: 0 0 25px rgba(0,0,0,.4), 0 0 6px inset rgba(255,255,255,.26);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4),
+    0 0 6px inset rgba(255, 255, 255, 0.26);
   border: none;
   outline: none;
 }
@@ -69,6 +78,7 @@ textarea.password {
   height: 20px;
 }
 
-textarea.encrypted, textarea.plaintext {
+textarea.encrypted,
+textarea.plaintext {
   min-height: 100px;
 }
